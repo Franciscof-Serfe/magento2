@@ -88,9 +88,10 @@ class CarrierTest extends TestCase
      * @var array
      */
     private $config = [
-        'carriers/usps/allowed_methods' => '0_FCLE,0_FCL,0_FCP,1,2,3,4,6,7,13,16,17,22,23,25,27,28,33,' .
-            '34,35,36,37,42,43,53,55,56,57,61,INT_1,INT_2,INT_4,INT_6,INT_7,INT_8,INT_9,INT_10,INT_11,' .
-            'INT_12,INT_13,INT_14,INT_15,INT_16,INT_20,INT_26',
+        'usps_000,usps_9000,usps_1,usps_9001,usps_2,usps_9002,usps_201,usps_202,usps_203,usps_204,' .
+        'usps_9204,usps_205,usps_9205,usps_206,usps_9206,usps_3,usps_301,usps_302,usps_303,usps_304,' .
+        'usps_9304,usps_4,usps_401,usps_402,usps_403,usps_404,usps_405,usps_5,usps_501,usps_502,' .
+        'usps_6,usps_601,usps_602,usps_603,usps_604,usps_605,usps_7,usps_9007,usps_9,usps_9009',
         'carriers/usps/showmethod' => 1,
         'carriers/usps/debug' => 1,
         'carriers/usps/userid' => 'test',
