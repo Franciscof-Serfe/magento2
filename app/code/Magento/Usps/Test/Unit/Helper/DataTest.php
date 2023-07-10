@@ -52,24 +52,47 @@ class DataTest extends TestCase
     public function shippingMethodDataProvider()
     {
         return [
-            ['usps_0_FCLE'],   // First-Class Mail Large Envelope
-            ['usps_1'],        // Priority Mail
-            ['usps_2'],        // Priority Mail Express Hold For Pickup
-            ['usps_3'],        // Priority Mail Express
-            ['usps_4'],        // Retail Ground
-            ['usps_6'],        // Media Mail
-            ['usps_INT_1'],    // Priority Mail Express International
-            ['usps_INT_2'],    // Priority Mail International
-            ['usps_INT_4'],    // Global Express Guaranteed (GXG)
-            ['usps_INT_7'],    // Global Express Guaranteed Non-Document Non-Rectangular
-            ['usps_INT_8'],    // Priority Mail International Flat Rate Envelope
-            ['usps_INT_9'],    // Priority Mail International Medium Flat Rate Box
-            ['usps_INT_10'],   // Priority Mail Express International Flat Rate Envelope
-            ['usps_INT_11'],   // Priority Mail International Large Flat Rate Box
-            ['usps_INT_12'],   // USPS GXG Envelopes
-            ['usps_INT_14'],   // First-Class Mail International Large Envelope
-            ['usps_INT_16'],   // Priority Mail International Small Flat Rate Box
-            ['usps_INT_20'],   // Priority Mail International Small Flat Rate Envelope
+            ['usps_0'],          // All Mail Classes (1-digit)
+            ['usps_000'],        // All Mail Classes (3-digit)
+            ['usps_9000'],       // All HAZMAT Mail Classes (4-digit)
+            ['usps_1'],          // Priority Mail Express
+            ['usps_9001'],       // Priority Mail Express HAZMAT
+            ['usps_2'],          // Priority Mail
+            ['usps_9002'],       // Priority Mail HAZMAT
+            ['usps_201'],        // Priority Mail 1-Day (Deprecated)
+            ['usps_202'],        // Priority Mail 2-Day (Deprecated)
+            ['usps_203'],        // Priority Mail 3-Day (Deprecated)
+            ['usps_204'],        // Priority Mail Military
+            ['usps_9204'],       // Priority Mail Military HAZMAT
+            ['usps_205'],        // Priority Mail DPO
+            ['usps_9205'],       // Priority Mail DPO HAZMAT
+            ['usps_206'],        // Priority Mail Offshore
+            ['usps_9206'],       // Priority Mail Offshore HAZMAT
+            ['usps_3'],          // First-Class
+            ['usps_301'],        // First-Class Mail Letters
+            ['usps_302'],        // First-Class Mail Flats
+            ['usps_303'],        // First-Class Mail Cards
+            ['usps_304'],        // First-Class Mail Parcel/Package (FCPS)
+            ['usps_304'],        // Retail Ground (RG)
+            ['usps_9304'],       // First-Class Mail Parcel/Package and Retail Ground HAZMAT
+            ['usps_4'],          // Standard Mail
+            ['usps_401'],        // Standard Mail Letters
+            ['usps_402'],        // Standard Mail Flats
+            ['usps_403'],        // Standard Mail Marketing Parcels
+            ['usps_404'],        // Standard Mail Simple Samples
+            ['usps_405'],        // Parcel Select Lightweight (Deprecated)
+            ['usps_5'],          // Periodicals
+            ['usps_501'],        // Periodicals
+            ['usps_502'],        // Parcel Shaped Periodicals
+            ['usps_6'],          // Package Services
+            ['usps_6'],          // Retail Ground HAZMAT (deprecated), LIVES, Offshore
+            ['usps_601'],        // Parcel Select (Deprecated)
+            ['usps_602'],        // Standard Post
+            ['usps_603'],        // Media Mail
+            ['usps_604'],        // Library Mail
+            ['usps_605'],        // Bound Printed Matter
+            ['usps_7'],          // Parcel Select Ground
+            ['usps_9007'],       // Parcel Select Ground HAZMAT
         ];
     }
 }
