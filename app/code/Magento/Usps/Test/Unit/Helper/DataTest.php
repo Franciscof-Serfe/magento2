@@ -68,13 +68,12 @@ class DataTest extends TestCase
             ['usps_9205'],       // Priority Mail DPO HAZMAT
             ['usps_206'],        // Priority Mail Offshore
             ['usps_9206'],       // Priority Mail Offshore HAZMAT
-            ['usps_3'],          // First-Class
+            ['usps_3'],          // USPS Ground Advantage (up to 15.999 oz)
             ['usps_301'],        // First-Class Mail Letters
             ['usps_302'],        // First-Class Mail Flats
             ['usps_303'],        // First-Class Mail Cards
-            ['usps_304'],        // First-Class Mail Parcel/Package (FCPS)
-            ['usps_304'],        // Retail Ground (RG)
-            ['usps_9304'],       // First-Class Mail Parcel/Package and Retail Ground HAZMAT
+            ['usps_304'],        // USPS Ground Advantage (up to 15.999 oz)
+            ['usps_9304'],       // USPS Ground Advantage (up to 15.999 oz) HAZMAT
             ['usps_4'],          // Standard Mail
             ['usps_401'],        // Standard Mail Letters
             ['usps_402'],        // Standard Mail Flats
@@ -85,14 +84,16 @@ class DataTest extends TestCase
             ['usps_501'],        // Periodicals
             ['usps_502'],        // Parcel Shaped Periodicals
             ['usps_6'],          // Package Services
-            ['usps_6'],          // Retail Ground HAZMAT (deprecated), LIVES, Offshore
+            ['usps_6'],          // USPS Ground Advantage LIVES, Offshore
             ['usps_601'],        // Parcel Select (Deprecated)
             ['usps_602'],        // Standard Post
             ['usps_603'],        // Media Mail
             ['usps_604'],        // Library Mail
             ['usps_605'],        // Bound Printed Matter
-            ['usps_7'],          // Parcel Select Ground
-            ['usps_9007'],       // Parcel Select Ground HAZMAT
+            ['usps_7'],          // USPS Ground Advantage (up to 15.999 oz)
+            ['usps_9007'],       // USPS Ground Advantage (up to 15.999 oz) HAZMAT
+            ['usps_9'],          // USPS Ground Advantage (1 to 70lbs)
+            ['usps_9009'],       // USPS Ground Advantage (1 to 70lbs) HAZMAT
         ];
     }
 }
